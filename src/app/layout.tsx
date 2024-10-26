@@ -24,9 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta http-equiv="cache-control" content="no-cache" />
-        <meta http-equiv="expires" content="0" />
-        <meta http-equiv="pragma" content="no-cache" />
+        <meta httpEquiv="cache-control" content="no-cache" />
+        <meta httpEquiv="expires" content="0" />
+        <meta httpEquiv="pragma" content="no-cache" />
       </head>
       <body
         className={twMerge(
