@@ -54,14 +54,14 @@ export async function POST(request: Request) {
   const transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: process.env.NEXT_PUBLIC_EMAIL_USER,
-      pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASSWORD,
     },
   });
 
   // Send confirmation email to the user
   await transporter.sendMail({
-    from: process.env.NEXT_PUBLIC_EMAIL_USER,
+    from: process.env.EMAIL_USER,
     to: email,
     subject: "Message Received",
     text: `Hello ${name},\n\nThank you for reaching out. I've received your message and will contact you soon.\n\nBest regards,\nSumit Saurav`,
@@ -69,8 +69,8 @@ export async function POST(request: Request) {
 
   // Send the email notification to yourself
   await transporter.sendMail({
-    from: process.env.NEXT_PUBLIC_EMAIL_USER,
-    to: process.env.NEXT_PUBLIC_EMAIL_USER,
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER,
     subject: "New Contact Form Submission",
     text: `You've received a new message from your website:\n\nName: ${name}\nEmail: ${email}\nNumber: ${number}\nMessage: ${message}`,
   });

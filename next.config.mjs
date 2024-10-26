@@ -17,8 +17,8 @@ const nextConfig = {
   },
   env: {
     NEXT_PUBLIC_DATABASE_URL: process.env.NEXT_PUBLIC_DATABASE_URL,
-    NEXT_PUBLIC_EMAIL_USER: process.env.NEXT_PUBLIC_EMAIL_USER,
-    NEXT_PUBLIC_EMAIL_PASSWORD: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
+    EMAIL_USER: process.env.EMAIL_USER,
+    EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
   },
 };
 
