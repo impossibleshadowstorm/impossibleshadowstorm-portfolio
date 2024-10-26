@@ -13,11 +13,7 @@ export default function Projects() {
   return (
     <Container>
       <span className="text-4xl">⚡</span>
-      <Heading className="font-black mb-10">
-        {" "}
-        What I&apos;ve been working on
-      </Heading>
-
+      <Heading className="font-black mb-10"> Things I&apos;ve Built</Heading>
       <Products />
     </Container>
   );

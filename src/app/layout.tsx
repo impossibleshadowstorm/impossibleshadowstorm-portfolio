@@ -23,6 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta httpEquiv="cache-control" content="no-cache" />
+        <meta httpEquiv="expires" content="0" />
+        <meta httpEquiv="pragma" content="no-cache" />
+      </head>
       <body
         className={twMerge(
           inter.className,
