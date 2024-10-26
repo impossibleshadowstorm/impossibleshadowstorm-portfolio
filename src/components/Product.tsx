@@ -10,6 +10,7 @@ export const SingleProduct = ({ product }: { product: Product }) => {
   const [activeImage, setActiveImage] = useState<StaticImageData | string>(
     product.thumbnail
   );
+
   return (
     <div className="py-10">
       <motion.div

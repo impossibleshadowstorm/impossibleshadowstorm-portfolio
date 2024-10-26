@@ -1,11 +1,6 @@
-import etlProjectImage from "public/images/projects/survey-extractor/banner.png";
-import sidefolioAceternity2 from "public/images/sidefolio-aceternity-2.png";
-import sidefolioAlgochurn from "public/images/sidefolio-algochurn.png";
-import sidefolioAlgochurn2 from "public/images/sidefolio-algochurn.png";
-import sidefolioMoonbeam from "public/images/sidefolio-moonbeam.png";
-import sidefolioMoonbeam2 from "public/images/sidefolio-moonbeam-2.png";
-import sidefolioTailwindMasterKit from "public/images/sidefolio-tailwindmasterkit.png";
-import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterkit-2.png";
+import etlProjectBannerImage from "public/images/projects/etl-system/banner.png";
+import auditToolBannerImage from "public/images/projects/audit-tool/banner.png";
+import hrManagementBannerImage from "public/images/projects/hr-management/banner.png";
 
 export const products = [
   {
@@ -13,8 +8,8 @@ export const products = [
     title: "ETL System",
     description:
       "Designed an ETL system, reducing data processing time by 70% and improving data accuracy, enabling faster decision-making.",
-    thumbnail: "/images/projects/etl-system/banner.png",
-    images: ["/images/projects/etl-system/banner.png"],
+    thumbnail: etlProjectBannerImage,
+    images: [etlProjectBannerImage],
     stack: [
       "Python",
       "PostgreSQL",
@@ -52,8 +47,8 @@ export const products = [
     title: "Audit Tool",
     description:
       "Developed a secure document management and budget tracking system with role-based access and streamlined deployment using RESTful web services and Docker.",
-    thumbnail: "/images/projects/audit-tool/banner.png",
-    images: ["/images/projects/audit-tool/banner.png"],
+    thumbnail: auditToolBannerImage,
+    images: [auditToolBannerImage],
     stack: [
       "React.js",
       "MUI",
@@ -90,8 +85,8 @@ export const products = [
     title: "HR Management Tool",
     description:
       "Automated resume extraction and created dashboards for efficient, data-driven HR decision-making.",
-    thumbnail: "/images/projects/hr-management/banner.png",
-    images: ["/images/projects/hr-management/banner.png"],
+    thumbnail: hrManagementBannerImage,
+    images: [hrManagementBannerImage],
     stack: ["React.js", "Python", "Django", "SQLite", "MUI", "Redux"],
     slug: "hr-management-tool",
     content: (
@@ -120,11 +115,8 @@ export const products = [
     title: "Cognify Digital",
     description:
       "Developed a responsive and SEO-optimized website with an employee portal for automated document generation using Next.js, Prisma, and PostgreSQL.",
-    thumbnail: "/images/projects/etl-system/banner.png",
-    images: [
-      "/images/projects/etl-system/banner.png",
-      sidefolioTailwindMasterKit2,
-    ],
+    thumbnail: etlProjectBannerImage,
+    images: [etlProjectBannerImage],
     stack: [
       "Next.js",
       "Tailwind",
@@ -160,8 +152,8 @@ export const products = [
     title: "Fery Rides: Women Scooty Taxi Application",
     description:
       "Developed a scooty taxi app for women with real-time geolocation, boosting ride bookings and customer satisfaction.",
-    thumbnail: "/images/projects/etl-system/banner.png",
-    images: ["/images/projects/etl-system/banner.png"],
+    thumbnail: etlProjectBannerImage,
+    images: [etlProjectBannerImage],
     stack: ["Flutter", "Firebase", "Google Maps SDK"],
     slug: "fery-rides-women-scooty-taxi-application",
     content: (
@@ -190,8 +182,8 @@ export const products = [
     title: "Elements UI - NPM Package",
     description:
       "Built a reusable, scalable UI component library that standardized design across internal projects, enhancing development speed and consistency.",
-    thumbnail: "/images/projects/etl-system/banner.png",
-    images: ["/images/projects/etl-system/banner.png"],
+    thumbnail: etlProjectBannerImage,
+    images: [etlProjectBannerImage],
     stack: ["React.js", "CSS", "Rollup"],
     slug: "elements-ui-npm-package",
     content: (
@@ -220,8 +212,8 @@ export const products = [
     title: "NoQ: QueueLess Shopping Experience",
     description:
       "Built a personal queue-less shopping app concept, leveraging QR code scanning for seamless product identification.",
-    thumbnail: "/images/projects/etl-system/banner.png",
-    images: ["/images/projects/etl-system/banner.png"],
+    thumbnail: etlProjectBannerImage,
+    images: [etlProjectBannerImage],
     stack: ["Flutter", "Firebase", "OR Code Operations"],
     slug: "noq-queueLess-shopping-experience",
     content: (
