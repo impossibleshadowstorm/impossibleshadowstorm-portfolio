@@ -8,7 +8,6 @@ export const TechStack = () => {
     {
       title: "Next.js",
       src: "/images/logos/next.png",
-
       className: "h-10 w-14",
     },
     {

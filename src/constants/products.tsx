@@ -9,14 +9,23 @@ import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterk
 
 export const products = [
   {
-    href: "https://aceternity.com",
-    title: "Aceternity",
+    href: "#",
+    title: "ETL System",
     description:
-      "A design and development studio that focuses on building quality apps.",
+      "Designed an ETL system, reducing data processing time by 70% and improving data accuracy, enabling faster decision-making.",
     thumbnail: sidefolioAceternity,
     images: [sidefolioAceternity, sidefolioAceternity2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "aceternity",
+    stack: [
+      "Python",
+      "PostgreSQL",
+      "Grafana",
+      "Docker",
+      "AWS",
+      "GCP",
+      "Azure",
+      "Terraform",
+    ],
+    slug: "etl-system",
     content: (
       <div>
         <p>
@@ -39,14 +48,22 @@ export const products = [
     ),
   },
   {
-    href: "https://algochurn.com",
-    title: "Algochurn",
+    href: "",
+    title: "Audit Tool",
     description:
-      "Practice for technical interviews with hands on coding challenges.",
+      "Developed a secure document management and budget tracking system with role-based access and streamlined deployment using RESTful web services and Docker.",
     thumbnail: sidefolioAlgochurn,
     images: [sidefolioAlgochurn, sidefolioAlgochurn2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "algochurn",
+    stack: [
+      "React.js",
+      "MUI",
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "Docker",
+      "AWS",
+    ],
+    slug: "audit-tool",
     content: (
       <div>
         <p>
@@ -69,14 +86,14 @@ export const products = [
     ),
   },
   {
-    href: "https://gomoonbeam.com",
-    title: "Moonbeam",
+    href: "",
+    title: "HR Management Tool",
     description:
-      "Never write from scratch again with Moonbeam, your AI first writing tool",
+      "Automated resume extraction and created dashboards for efficient, data-driven HR decision-making.",
     thumbnail: sidefolioMoonbeam,
     images: [sidefolioMoonbeam, sidefolioMoonbeam2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "moonbeam",
+    stack: ["React.js", "Python", "Django", "SQLite", "MUI", "Redux"],
+    slug: "hr-management-tool",
     content: (
       <div>
         <p>
@@ -99,14 +116,111 @@ export const products = [
     ),
   },
   {
-    href: "https://tailwindmasterkit.com",
-    title: "Tailwind Master Kit",
+    href: "https://cognifydigital.in",
+    title: "Cognify Digital",
     description:
-      "A beautiful and comprehensive Tailwind CSS components library for building modern websites and applications.",
+      "Developed a responsive and SEO-optimized website with an employee portal for automated document generation using Next.js, Prisma, and PostgreSQL.",
     thumbnail: sidefolioTailwindMasterKit,
     images: [sidefolioTailwindMasterKit, sidefolioTailwindMasterKit2],
-    stack: ["Nextjs", "Tailwindcss"],
+    stack: [
+      "Next.js",
+      "Tailwind",
+      "Prisma",
+      "PostgreSQL",
+      "Docker",
+      "CI/CD Pipeline",
+    ],
     slug: "tailwindmasterkit",
+    content: (
+      <div>
+        <p>
+          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
+          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
+          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
+          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
+          non cupidatat duis esse velit ut culpa et.{" "}
+        </p>
+        <p>
+          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
+          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
+          sit aute fugiat incididunt nostrud consequat proident fugiat id.
+          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
+          reprehenderit. Cillum Lorem veniam eu magna exercitation.
+          Reprehenderit adipisicing minim et officia enim et veniam Lorem
+          excepteur velit adipisicing et Lorem magna.
+        </p>{" "}
+      </div>
+    ),
+  },
+  {
+    href: "https://play.google.com/store/apps/details?id=com.feryrides.app.fery_rides",
+    title: "Fery Rides: Women Scooty Taxi Application",
+    description:
+      "Developed a scooty taxi app for women with real-time geolocation, boosting ride bookings and customer satisfaction.",
+    thumbnail: sidefolioTailwindMasterKit,
+    images: [sidefolioTailwindMasterKit, sidefolioTailwindMasterKit2],
+    stack: ["Flutter", "Firebase", "Google Maps SDK"],
+    slug: "fery-rides-women-scooty-taxi-application",
+    content: (
+      <div>
+        <p>
+          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
+          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
+          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
+          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
+          non cupidatat duis esse velit ut culpa et.{" "}
+        </p>
+        <p>
+          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
+          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
+          sit aute fugiat incididunt nostrud consequat proident fugiat id.
+          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
+          reprehenderit. Cillum Lorem veniam eu magna exercitation.
+          Reprehenderit adipisicing minim et officia enim et veniam Lorem
+          excepteur velit adipisicing et Lorem magna.
+        </p>{" "}
+      </div>
+    ),
+  },
+  {
+    href: "#",
+    title: "Elements UI - NPM Package",
+    description:
+      "Built a reusable, scalable UI component library that standardized design across internal projects, enhancing development speed and consistency.",
+    thumbnail: sidefolioTailwindMasterKit,
+    images: [sidefolioTailwindMasterKit, sidefolioTailwindMasterKit2],
+    stack: ["React.js", "CSS", "Rollup"],
+    slug: "elements-ui-npm-package",
+    content: (
+      <div>
+        <p>
+          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
+          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
+          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
+          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
+          non cupidatat duis esse velit ut culpa et.{" "}
+        </p>
+        <p>
+          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
+          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
+          sit aute fugiat incididunt nostrud consequat proident fugiat id.
+          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
+          reprehenderit. Cillum Lorem veniam eu magna exercitation.
+          Reprehenderit adipisicing minim et officia enim et veniam Lorem
+          excepteur velit adipisicing et Lorem magna.
+        </p>{" "}
+      </div>
+    ),
+  },
+  {
+    href: "#",
+    title: "NoQ: QueueLess Shopping Experience",
+    description:
+      "Built a personal queue-less shopping app concept, leveraging QR code scanning for seamless product identification.",
+    thumbnail: sidefolioTailwindMasterKit,
+    images: [sidefolioTailwindMasterKit, sidefolioTailwindMasterKit2],
+    stack: ["Flutter", "Firebase", "OR Code Operations"],
+    slug: "noq-queueLess-shopping-experience",
     content: (
       <div>
         <p>
