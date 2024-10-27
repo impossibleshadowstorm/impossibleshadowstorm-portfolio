@@ -1,0 +1,15 @@
+volumes:
+  frontend:
+
+services:
+  frontend:
+    environment:
+      WATCHPACK_POLLING: "true"
+    env_file:
+      - ./.env.local
+    build:
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/app/
+    ports:
+      - 3000:3000

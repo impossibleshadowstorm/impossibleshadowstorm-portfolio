@@ -39,7 +39,7 @@ export const Sidebar = () => {
                 window.open("/files/resume.pdf", "_blank");
               }}
             >
-              <Badge href="/resume" text="Read Resume" />
+              <Badge href="#" text="Read Resume" />
             </div>
           </motion.div>
         )}
