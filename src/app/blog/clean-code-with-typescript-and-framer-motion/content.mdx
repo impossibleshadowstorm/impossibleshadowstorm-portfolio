@@ -1,0 +1,139 @@
+import { BlogLayout } from "@/components/BlogLayout";
+import { CodeWindow } from "@/components/CodeWindow";
+
+export const meta = {
+  date: "2023-08-18",
+  title: "Writing Clean Code With Typescript and Framer Motion",
+  description:
+    "Effective and efficient ways to write clean code with React while keeping in mind the performance and maintainability of the codebase.",
+  image:
+    "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  tags: ["Clean Code", "React", "TypeScript"],
+};
+
+export default (props) => <BlogLayout meta={meta} {...props} />;
+
+# Writing Clean Code With React
+
+When working with React, writing clean code ensures that your codebase is easy to understand, maintain, and extend. This blog covers some effective ways to maintain readability, keep your codebase efficient, and enhance maintainability in React TypeScript projects.
+
+## Why Write Clean Code?
+
+Clean code is crucial for collaborative work, reduces bugs, and makes future improvements or refactoring easier. Clean code in React can be achieved by following these principles:
+
+- **Component Modularity**: Break components down to reusable, single-responsibility units.
+- **Code Consistency**: Use naming conventions and consistent styling patterns.
+- **Comment Minimally**: Use comments only where necessary; otherwise, let code readability be the focus.
+- **Optimize Performance**: Avoid unnecessary re-renders and keep the UI responsive.
+
+## Example of a Clean Code Component
+
+Here’s an example of a clean and well-structured React component using TypeScript and `framer-motion` animations.
+
+<CodeWindow title="BoxesContainer.tsx">
+
+```tsx
+import React from "react";
+import { motion } from "framer-motion";
+
+export const BoxesContainer = () => {
+  const rows = new Array(150).fill(1);
+  const cols = new Array(100).fill(1);
+  const colors = [
+    "--sky-300",
+    "--pink-300",
+    "--green-300",
+    "--yellow-300",
+    "--red-300",
+    "--purple-300",
+    "--blue-300",
+    "--indigo-300",
+    "--violet-300",
+  ];
+
+  // Generates a random color from the colors array
+  const getRandomColor = () =>
+    colors[Math.floor(Math.random() * colors.length)];
+
+  return (
+    <div
+      style={{
+        transform: `translate(-40%,-60%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
+      }}
+      className="absolute left-1/4 p-4 -top-1/4 flex -translate-x-1/2 -translate-y-1/2 w-full h-full z-0"
+    >
+      {rows.map((_, rowIndex) => (
+        <motion.div
+          key={`row-${rowIndex}`}
+          className="w-16 h-8 border-l border-slate-700 relative"
+        >
+          {cols.map((_, colIndex) => (
+            <motion.div
+              whileHover={{
+                backgroundColor: `var(${getRandomColor()})`,
+                transition: { duration: 0 },
+              }}
+              animate={{
+                transition: { duration: 2 },
+              }}
+              key={`col-${colIndex}`}
+              className="w-16 h-8 border-r border-t border-slate-700 relative"
+            >
+              {colIndex % 2 === 0 && rowIndex % 2 === 0 ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="absolute h-6 w-10 -top-[14px] -left-[22px] text-slate-700 stroke-[1px] pointer-events-none"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v12m6-6H6"
+                  />
+                </svg>
+              ) : null}
+            </motion.div>
+          ))}
+        </motion.div>
+      ))}
+    </div>
+  );
+};
+```
+
+</CodeWindow>
+
+### Key Clean Code Practices Illustrated
+
+1. **Naming Conventions**:
+
+   - Use descriptive names that make the component and function purpose clear.
+   - For example, `BoxesContainer` explicitly suggests a container component for holding boxes, while `getRandomColor` communicates that it fetches a color randomly.
+
+2. **Code Readability**:
+
+   - Split logical sections with whitespace to make the code visually easy to scan.
+   - Logical variable naming (`rows`, `cols`, and `colors`) improves readability.
+
+3. **Reusable Functions**:
+
+   - Define reusable functions like `getRandomColor()` outside of the JSX body to avoid redundant definitions.
+   - This method keeps the JSX portion focused and clear.
+
+4. **TypeScript Benefits**:
+
+   - **Type Safety**: Errors are caught during development rather than runtime, and it enhances refactor reliability.
+   - **Autocomplete**: TypeScript provides better IDE support, especially in complex codebases.
+
+5. **Efficient Use of Props and State**:
+   - Keeping state to a minimum and passing only necessary props prevents performance bottlenecks.
+   - Since this example doesn’t require state, it’s avoided, helping improve performance by limiting unnecessary renders.
+
+## Conclusion
+
+Adopting clean code practices in React helps enhance the maintainability and readability of your codebase, making development faster and collaboration smoother. This approach allows for an improved developer experience and minimizes technical debt over time.
+
+By combining TypeScript and React best practices, you can write scalable and performant code that adapts easily to future requirements.

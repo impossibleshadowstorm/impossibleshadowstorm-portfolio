@@ -12,39 +12,39 @@ export const TechStack = () => {
     },
     {
       title: "AWS",
-      src: "/images/logos/aws.webp",
+      src: "/images/logos/aws.svg",
 
       className: "h-10 w-10",
     },
     {
       title: "Figma",
-      src: "/images/logos/figma.png",
+      src: "/images/logos/figma.svg",
 
       className: "h-10 w-8",
     },
     {
       title: "Framer Motion",
-      src: "/images/logos/framer.webp",
+      src: "/images/logos/framer.svg",
 
       className: "h-10 w-10",
     },
     {
       title: "Node",
-      src: "/images/logos/node.png",
+      src: "/images/logos/node.svg",
 
-      className: "h-10 w-12",
+      className: "h-10 w-10",
     },
     {
       title: "Tailwind",
-      src: "/images/logos/tailwind.png",
+      src: "/images/logos/tailwind.svg",
 
-      className: "h-10 w-24",
+      className: "h-10 w-10",
     },
     {
       title: "Vercel",
-      src: "/images/logos/vercel.png",
+      src: "/images/logos/vercel.svg",
 
-      className: "h-10 w-24",
+      className: "h-10 w-10",
     },
   ];
   return (

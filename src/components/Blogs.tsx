@@ -13,7 +13,7 @@ export const Blogs = ({ blogs }: { blogs: Blog[] }) => {
     <div className="max-w-5xl mx-auto my-10">
       {blogs.map((blog, index) => (
         <motion.div
-          key={blog.slug}
+          key={`${blog.slug}${index}`}
           initial={{
             opacity: 0,
             x: -50,
@@ -25,7 +25,7 @@ export const Blogs = ({ blogs }: { blogs: Blog[] }) => {
           transition={{ duration: 0.2, delay: index * 0.1 }}
         >
           <Link
-            key={`blog-${blog.title}`}
+            key={`blog-${blog.slug}${index}`}
             href={`/blog/${blog.slug}`}
             className="relative my-10 block"
             onMouseEnter={() => setHovered(blog.slug)}

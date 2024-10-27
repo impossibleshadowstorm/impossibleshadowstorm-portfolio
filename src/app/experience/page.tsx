@@ -4,6 +4,7 @@ import { Heading } from "@/components/Heading";
 import { Highlight } from "@/components/Highlight";
 import { Paragraph } from "@/components/Paragraph";
 import { TracingBeam } from "@/components/ui/tracing-beam";
+import { experienceHistory } from "@/constants/experience";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
@@ -78,40 +79,3 @@ export default function Experience() {
     </div>
   );
 }
-
-const experienceHistory = [
-  {
-    designation: "System Engineer",
-    organization: "Tata Consultancy Services Limited (TCS)",
-    description: [
-      "Completed a 45-day training program, gaining hands-on experience in Java and PL/SQL and knowledge in Spring Boot for backend development.",
-    ],
-    location: "Bangalore",
-    badge: "27 June 2024 - Present",
-    image: "/images/logos/employment/tcs.png",
-  },
-  {
-    designation: "Full Stack Consultant",
-    organization: "Cognify Digital Private Limited",
-    description: [
-      "Enhanced an Audit System using React.js, Redux, Django, and Docker adding RESTful web services for document management and budget tracking.",
-      "Built a private NPM package with React for code reusability and easy integration across projects.",
-      "Implemented an ETL system using Python and PostgreSQL for data extraction and transformation, visualizing results with Grafana.",
-    ],
-    location: "Remote",
-    badge: "07 October 2022 - 27 March 2024",
-    image: "/images/logos/employment/cognify-light.png",
-  },
-  {
-    designation: "Full Stack Intern",
-    organization: "AG Technologies",
-    description: [
-      "Automated financial reports using Automation Anywhere, improving data processing efficiency.",
-      "Developed a web scraper with Python Playwright for organized data extraction.",
-      "Built an HR Management System for resume parsing and dashboard visualization with React.js and Django.",
-    ],
-    location: "Rajasthan",
-    badge: "07 June 2022 - 06 October 2022",
-    image: "/images/logos/employment/agt.png",
-  },
-];

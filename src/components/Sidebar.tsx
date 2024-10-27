@@ -31,7 +31,14 @@ export const Sidebar = () => {
               <SidebarHeader />
               <Navigation setOpen={setOpen} />
             </div>
-            <div onClick={() => isMobile() && setOpen(false)}>
+            <div
+              onClick={() => {
+                if (isMobile()) {
+                  setOpen(false);
+                }
+                window.open("/files/resume.pdf", "_blank");
+              }}
+            >
               <Badge href="/resume" text="Read Resume" />
             </div>
           </motion.div>

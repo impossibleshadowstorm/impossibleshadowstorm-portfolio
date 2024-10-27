@@ -59,7 +59,10 @@ export const CodeWindow = ({ title, children }: any) => {
         )}
       >
         <div className="flex justify-between items-center bg-slate-800 py-2  px-4">
-          <p className=" text-emerald-500 text-sm font-medium bg-emerald-600/[0.3] px-2 !my-0 shadow-sm">
+          <p
+            className="text-white text-sm font-medium px-2 !my-0 shadow-sm"
+            style={{ color: "white" }}
+          >
             {title}
           </p>
 

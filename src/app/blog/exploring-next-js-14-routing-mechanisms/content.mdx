@@ -1,0 +1,139 @@
+import { BlogLayout } from "@/components/BlogLayout";
+import { CodeWindow } from "@/components/CodeWindow";
+
+export const meta = {
+  date: "2024-10-28",
+  title: "Exploring Next.js 14 Routing Mechanisms",
+  description:
+    "A guide to understanding the routing mechanisms in Next.js 14, with project structure examples for ease of reference.",
+  image: "/images/blogs/exploring-next-js-14-routing-mechanisms.webp",
+  tags: ["Next.js", "Routing", "Web Development"],
+};
+
+export default (props) => <BlogLayout meta={meta} {...props} />;
+
+# Exploring Next.js 14 Routing Mechanisms
+
+Next.js 14 introduces a more intuitive and flexible routing system, making it easy to manage static, dynamic, nested, and API routes. This guide walks through each routing type with examples, using a structured approach.
+
+## 1. Basic Routing
+
+Next.js automatically turns each file in the `app` directory into a route.
+
+<CodeWindow title="Project Structure for Basic Routing">
+
+```plaintext
+src/
+└── app/
+├── page.tsx "/"
+├── about/
+│ └── page.tsx "/about" route
+└── blog/
+└── [slug]/
+└── page.tsx "/blog/[slug]" Dynamic route
+```
+
+</CodeWindow>
+
+This structure gives us the following routes:
+
+- **Root Route (`/`)** - `src/app/page.tsx`
+- **About Page Route (`/about`)** - `src/app/about/page.tsx`
+- **Dynamic Blog Route (`/blog/[slug]`)** - `src/app/blog/[slug]/page.tsx`
+
+---
+
+## 2. Nested Routing
+
+Nested routes are created by nesting folders and `page.tsx` files within the `app` directory.
+
+<CodeWindow title="Project Structure for Nested Routing">
+
+```plaintext
+src/
+└── app/
+├── dashboard/
+│ ├── page.tsx "/dashboard"
+│ ├── settings/
+│ │ └── page.tsx "/dashboard/settings"
+│ └── profile/
+│ └── page.tsx  "/dashboard/profile"
+```
+
+</CodeWindow>
+
+Generated routes:
+
+- **Dashboard Route** - `/dashboard`
+- **Settings Route** - `/dashboard/settings`
+- **Profile Route** - `/dashboard/profile`
+
+---
+
+## 3. Dynamic Routing
+
+Dynamic routes capture variables in URLs using square brackets `[ ]`.
+
+<CodeWindow title="Project Structure for Dynamic Routing">
+
+```plaintext
+src/
+└── app/
+└── products/
+└── [productId]/
+└── page.tsx "/products/[productId]" Dynamic route
+```
+
+</CodeWindow>
+
+Here, `[productId]` captures any value as a parameter for the page component.
+
+---
+
+## 4. Catch-All Routing
+
+Next.js supports catch-all routes using `[[...param]]`, which handles multiple nested routes dynamically.
+
+<CodeWindow title="Project Structure for Catch-All Routing">
+
+```plaintext
+src/
+└── app/
+└── blog/
+└── [[...slug]]/
+└── page.tsx "/blog/any/number/of/segments" Catch-all route
+```
+
+</CodeWindow>
+
+The route `/blog/some/path/here` is matched by `[[...slug]]`.
+
+---
+
+## 5. API Routes
+
+In Next.js 14, you can create API endpoints by placing files in the `api` directory within `app`.
+
+<CodeWindow title="Project Structure for API Routes">
+
+```plaintext
+src/
+└── app/
+└── api/
+└── hello/
+└── route.ts "/api/hello" API route
+```
+
+</CodeWindow>
+
+This endpoint is accessible at `http://localhost:3000/api/hello`.
+
+---
+
+### Summary
+
+These routing mechanisms in Next.js 14 offer a comprehensive approach to manage routes across static pages, dynamic paths, and APIs with ease and structure.
+
+---
+
+Happy Coding!

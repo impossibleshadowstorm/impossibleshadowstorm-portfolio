@@ -2,9 +2,10 @@ import { Container } from "@/components/Container";
 import { Heading } from "@/components/Heading";
 import { Highlight } from "@/components/Highlight";
 import { Paragraph } from "@/components/Paragraph";
-import { Products } from "@/components/Products";
+import { Products } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import { TechStack } from "@/components/TechStack";
+import { calculateTotalExperience } from "@/constants/experience";
 
 export default function Home() {
   return (
@@ -18,24 +19,16 @@ export default function Home() {
         <Highlight>performance and design</Highlight>.
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
-        With <Highlight>2.5 years of development experience</Highlight>, I
+        With <Highlight>{calculateTotalExperience()} years of development experience</Highlight>, I
         thrive on solving complex problems that scale effortlessly.
       </Paragraph>
       <Heading
         as="h2"
-        className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
-      >
-        What I&apos;ve worked on
-      </Heading>
-      <Products />
-      <Heading
-        as="h2"
-        className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
+        className="text-lg md:text-lg lg:text-lg mt-20 mb-4"
       >
         My Skill sets
       </Heading>
       <Skills />
-      <TechStack />
     </Container>
   );
 }
