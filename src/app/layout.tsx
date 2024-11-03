@@ -1,6 +1,8 @@
+import React from "react";
 import { Sidebar } from "@/components/Sidebar";
 import "./globals.css";
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 import { Footer } from "@/components/Footer";
@@ -40,12 +42,25 @@ export default function RootLayout({
           sizes="180x180"
           href="/apple-touch-icon.png"
         />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+        `}
+        </Script>
       </head>
       <body
         className={twMerge(
           inter.className,
           "flex antialiased h-screen overflow-hidden bg-gray-100"
         )}
+        suppressHydrationWarning={true}
       >
         <Sidebar />
         <div className="lg:pl-2 lg:pt-2 bg-gray-100 flex-1 overflow-y-auto">

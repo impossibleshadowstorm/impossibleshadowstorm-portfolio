@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-import nextMDX from "@next/mdx";
+// import nextMDX from "@next/mdx";
+import createMDX from '@next/mdx'
 import remarkGfm from "remark-gfm";
 import rehypePrism from "@mapbox/rehype-prism";
 
@@ -15,6 +16,7 @@ const nextConfig = {
   experimental: {
     mdxRs: true,
   },
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   env: {
     NEXT_PUBLIC_DATABASE_URL: process.env.NEXT_PUBLIC_DATABASE_URL,
     EMAIL_USER: process.env.EMAIL_USER,
@@ -24,7 +26,7 @@ const nextConfig = {
   },
 };
 
-const withMDX = nextMDX({
+const withMDX = createMDX({
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [remarkGfm],
