@@ -115,7 +115,8 @@ export const projects = [
     content: <CognifyDigital />,
   },
   {
-    href: "https://play.google.com/store/apps/details?id=com.feryrides.app.fery_rides",
+    href:
+      "https://play.google.com/store/apps/details?id=com.feryrides.app.fery_rides",
     title: "Fery Rides: Women Scooty Taxi",
     description:
       "Developed a scooty taxi app for women with real-time geolocation, boosting ride bookings and customer satisfaction.",
@@ -187,7 +188,8 @@ export const projects = [
   },
   // ALS App
   {
-    href: "https://play.google.com/store/apps/details?id=de.ambulanzpartner.alsapp&hl=en",
+    href:
+      "https://play.google.com/store/apps/details?id=de.ambulanzpartner.alsapp&hl=en",
     title: "ALS App",
     description:
       "A comprehensive app for ALS patients to track disease progression, manage care, and receive tailored support and insights for a more autonomous treatment journey.",
@@ -199,7 +201,8 @@ export const projects = [
   },
   // Nri
   {
-    href: "https://play.google.com/store/apps/details?id=com.nrisingles&hl=en_IN",
+    href:
+      "https://play.google.com/store/apps/details?id=com.nrisingles&hl=en_IN",
     title: "NRIForShaadi - NRI Shaadi",
     description:
       "A global matchmaking app for NRI singles from Punjabi, Gujarati, Tamil, Telugu, Marathi, Sikh, and other Indian communities, enabling members worldwide to find their soulmate based on real-time proximity and shared interests.",
@@ -311,7 +314,7 @@ export const categorizedProjects = [
         href: "#",
         title: "Invoice Data Extractor",
         description:
-          "A mobile app for ordering premium poultry, seafood, and meat with doorstep delivery and secure, seamless transactions.",
+          "The Invoice Data Extractor automates the extraction of structured data from scanned invoices, streamlining data processing for efficient invoice management and analysis.",
         thumbnail: invoiceDataExtractorBannerImage,
         images: [invoiceDataExtractorBannerImage],
         stack: ["Python", "Pytesseract", "PDFMiner", "Pdf2Image"],
@@ -379,7 +382,8 @@ export const categorizedProjects = [
     title: "Android / iOS Applications",
     projects: [
       {
-        href: "https://play.google.com/store/apps/details?id=com.feryrides.app.fery_rides",
+        href:
+          "https://play.google.com/store/apps/details?id=com.feryrides.app.fery_rides",
         title: "Fery Rides: Women Scooty Taxi",
         description:
           "Developed a scooty taxi app for women with real-time geolocation, boosting ride bookings and customer satisfaction.",
@@ -390,7 +394,8 @@ export const categorizedProjects = [
         content: <FeryRides />,
       },
       {
-        href: "https://play.google.com/store/apps/details?id=com.zuluresh&hl=en_IN",
+        href:
+          "https://play.google.com/store/apps/details?id=com.zuluresh&hl=en_IN",
         title: "Zuluresh - Chicken Fish & Meat",
         description:
           "A mobile app for ordering premium poultry, seafood, and meat with doorstep delivery and secure, seamless transactions.",
@@ -401,7 +406,8 @@ export const categorizedProjects = [
         content: <Zuluresh />,
       },
       {
-        href: "https://play.google.com/store/apps/details?id=de.ambulanzpartner.alsapp&hl=en",
+        href:
+          "https://play.google.com/store/apps/details?id=de.ambulanzpartner.alsapp&hl=en",
         title: "ALS App",
         description:
           "A comprehensive app for ALS patients to track disease progression, manage care, and receive tailored support and insights for a more autonomous treatment journey.",
@@ -412,7 +418,8 @@ export const categorizedProjects = [
         content: <ALSApp />,
       },
       {
-        href: "https://play.google.com/store/apps/details?id=com.nrisingles&hl=en_IN",
+        href:
+          "https://play.google.com/store/apps/details?id=com.nrisingles&hl=en_IN",
         title: "NRIForShaadi - NRI Shaadi",
         description:
           "A global matchmaking app for NRI singles from Punjabi, Gujarati, Tamil, Telugu, Marathi, Sikh, and other Indian communities, enabling members worldwide to find their soulmate based on real-time proximity and shared interests.",
@@ -431,7 +438,8 @@ export const categorizedProjects = [
         images: [hydroponicStoreBannerImage],
         stack: ["Flutter", "Firebase"],
         slug: "hydroponic-store",
-        repository: "https://github.com/impossibleshadowstorm/Hydroponics-Store",
+        repository:
+          "https://github.com/impossibleshadowstorm/Hydroponics-Store",
         content: <HydroponicStore />,
       },
       {
@@ -447,5 +455,5 @@ export const categorizedProjects = [
         content: <NoQ />,
       },
     ],
-  }
+  },
 ];
