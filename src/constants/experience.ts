@@ -54,7 +54,7 @@ export function calculateTotalExperience(): number {
     const startDate = new Date(start);
     const endDate = end === "Present" ? currentDate : new Date(end);
     const diffInTime = endDate.getTime() - startDate.getTime();
-    const diffInYears = diffInTime / (1000 * 3600 * 24 * 365.25);
+    const diffInYears = diffInTime / (1000 * 3600 * 24 * 365);
     return total + diffInYears;
   }, 0);
 
