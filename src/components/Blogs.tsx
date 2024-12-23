@@ -6,6 +6,7 @@ import { Heading } from "./Heading";
 import { Paragraph } from "./Paragraph";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import { MotionDiv } from "./common/motion";
 
 export const Blogs = ({ blogs }: { blogs: Blog[] }) => {
   const [hovered, setHovered] = useState<string | null>(null);
@@ -33,7 +34,7 @@ export const Blogs = ({ blogs }: { blogs: Blog[] }) => {
           >
             <AnimatePresence mode="wait">
               {hovered === blog.slug && (
-                <motion.div
+                <MotionDiv
                   initial={{
                     opacity: 0,
                     scaleX: 0.95,
