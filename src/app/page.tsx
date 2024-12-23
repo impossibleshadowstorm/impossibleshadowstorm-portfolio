@@ -17,13 +17,13 @@ export default function Home() {
         <Highlight>performance and design</Highlight>.
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
-        With <Highlight>{calculateTotalExperience()} years of development experience</Highlight>, I
-        thrive on solving complex problems that scale effortlessly.
+        With{" "}
+        <Highlight>
+          {calculateTotalExperience()} years of development experience
+        </Highlight>
+        , I thrive on solving complex problems that scale effortlessly.
       </Paragraph>
-      <Heading
-        as="h2"
-        className="text-lg md:text-lg lg:text-lg mt-20 mb-4"
-      >
+      <Heading as="h2" className="text-lg md:text-lg lg:text-lg mt-20 mb-4">
         My Skill sets
       </Heading>
       <Skills />

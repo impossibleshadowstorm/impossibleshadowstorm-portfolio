@@ -1,5 +1,6 @@
 "use client";
 
+import { Container } from "@/components/Container";
 import { Heading } from "@/components/Heading";
 import { Highlight } from "@/components/Highlight";
 import { Paragraph } from "@/components/Paragraph";
@@ -24,7 +25,7 @@ const heading = (
 
 export default function Experience() {
   return (
-    <div className="max-w-4xl w-full mx-auto px-4 md:px-10">
+    <Container>
       <TracingBeam heading={heading}>
         <div className="max-w-2xl mx-auto antialiased pt-4 relative mb-40">
           {experienceHistory.map((item, index) => (
@@ -76,6 +77,6 @@ export default function Experience() {
           ))}
         </div>
       </TracingBeam>
-    </div>
+    </Container>
   );
 }

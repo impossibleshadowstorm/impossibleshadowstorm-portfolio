@@ -116,18 +116,30 @@ export const skills: SkillItem[] = [
       },
       {
         id: 2,
+        title: "NestJs",
+        src: "/images/logos/nestjs.svg",
+        className: "h-10 w-12",
+      },
+      {
+        id: 3,
         title: "Django",
         src: "/images/logos/django.svg",
         className: "h-10 w-10",
       },
       {
-        id: 3,
+        id: 4,
         title: "Spring Boot",
         src: "/images/logos/spring.svg",
         className: "h-10 w-10",
       },
       {
-        id: 4,
+        id: 5,
+        title: "Graph QL",
+        src: "/images/logos/graphql.svg",
+        className: "h-10 w-10",
+      },
+      {
+        id: 6,
         title: "RESTful Web Services",
         src: "/images/logos/rest.svg",
         className: "h-10 w-10",
@@ -267,13 +279,13 @@ export const skills: SkillItem[] = [
     skillSets: [
       {
         id: 1,
-        title: "Visual Studio Code",
+        title: "Android Studio",
         src: "/images/logos/android-studio.svg",
         className: "h-10 w-12",
       },
       {
         id: 2,
-        title: "Android Studio",
+        title: "Visual Studio Code",
         src: "/images/logos/vs-code.svg",
         className: "h-10 w-10",
       },

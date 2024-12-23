@@ -9,7 +9,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blogs | Sumit Saurav",
   description:
-    "Sumit Saurav is a developer. He is a digital nomad and travels around the world while working remotely.",
+    "I'm Sumit Saurav, a developer and digital nomad who loves exploring the world while working remotely.",
 };
 
 export default async function Blog() {

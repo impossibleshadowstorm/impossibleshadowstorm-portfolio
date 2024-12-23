@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: "Projects | Sumit Saurav",
       description:
-        "Sumit Saurav is a developer. He is a digital nomad and travels around the world while working remotely.",
+        "I'm Sumit Saurav, a developer and digital nomad who loves exploring the world while working remotely.",
     };
   }
 }

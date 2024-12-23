@@ -1,5 +1,6 @@
 "use client";
 
+import { Container } from "@/components/Container";
 import { Heading } from "@/components/Heading";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { Cover } from "@/components/ui/cover";
@@ -33,8 +34,8 @@ const heading = (
 
 export default function Education() {
   return (
-    <BackgroundBeamsWithCollision>
-      <div className="max-w-4xl w-full mx-auto px-4 md:px-10">
+    <Container>
+      <BackgroundBeamsWithCollision>
         <TracingBeam heading={heading}>
           <div className="max-w-2xl mx-auto antialiased pt-4 relative mb-40">
             {educationHistory.map((item, index) => (
@@ -72,8 +73,8 @@ export default function Education() {
             ))}
           </div>
         </TracingBeam>
-      </div>
-    </BackgroundBeamsWithCollision>
+      </BackgroundBeamsWithCollision>
+    </Container>
   );
 }
 

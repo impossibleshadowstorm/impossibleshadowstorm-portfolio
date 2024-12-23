@@ -47,16 +47,42 @@ export const experienceHistory: Experience[] = [
 ];
 
 // Function to calculate total experience in years
+// export function calculateTotalExperience(): number {
+//   const currentDate = new Date();
+//   const totalExperience = experienceHistory.reduce((total, experience) => {
+//     const [start, end] = experience.badge.split(" - ");
+//     const startDate = new Date(start);
+//     console.log("Name: ", experience.organization);
+//     const endDate = end === "Present" ? currentDate : new Date(end);
+//     console.log("Start Date: ", startDate);
+//     console.log("End Date: ", endDate);
+//     const diffInTime = endDate.getTime() - startDate.getTime();
+//     console.log("Difference in Time: ", diffInTime);
+//     const diffInYears = diffInTime / (1000 * 3600 * 24 * 365);
+//     console.log("Difference in Years: ", diffInYears);
+//     return total + diffInYears;
+//   }, 0);
+//   console.log("Total Experience: ", totalExperience);
+//   return parseFloat(totalExperience.toFixed(2));
+// }
+
+// Function to calculate total experience in years and months
 export function calculateTotalExperience(): number {
   const currentDate = new Date();
-  const totalExperience = experienceHistory.reduce((total, experience) => {
+
+  const totalMonths = experienceHistory.reduce((total, experience) => {
     const [start, end] = experience.badge.split(" - ");
     const startDate = new Date(start);
     const endDate = end === "Present" ? currentDate : new Date(end);
+
     const diffInTime = endDate.getTime() - startDate.getTime();
-    const diffInYears = diffInTime / (1000 * 3600 * 24 * 365);
-    return total + diffInYears;
+
+    const diffInMonths = diffInTime / (1000 * 3600 * 24 * 30.4375); // Average days in a month
+
+    return total + Math.round(diffInMonths); // Round to the nearest month
   }, 0);
 
-  return parseFloat(totalExperience.toFixed(2));
+  const totalYears = totalMonths / 12;
+
+  return parseFloat(totalYears.toFixed(2)); // Convert to years with one decimal
 }
