@@ -19,7 +19,8 @@ export default function Home() {
       <Paragraph className="max-w-xl mt-4">
         With{" "}
         <Highlight>
-          {calculateTotalExperience()} years of development experience
+{/*           {calculateTotalExperience()}  */}
+          Almost 3 years of development experience
         </Highlight>
         , I thrive on solving complex problems that scale effortlessly.
       </Paragraph>
