@@ -17,7 +17,7 @@ export const experienceHistory: Experience[] = [
       "Developed automated reports by writing complex Impala SQL queries, improving the accuracy and timeliness of data analysis for various decision-making.",
     ],
     location: "Bangalore",
-    badge: "27 June 2024 - Present",
+    badge: "June 2024 - Present",
     image: "/images/logos/employment/tcs.png",
   },
   {
@@ -29,7 +29,7 @@ export const experienceHistory: Experience[] = [
       "Implemented an ETL system using Python and PostgreSQL for data extraction and transformation, visualizing results with Grafana.",
     ],
     location: "Remote",
-    badge: "07 October 2022 - 27 March 2024",
+    badge: "October 2022 - March 2024",
     image: "/images/logos/employment/cognify-light.png",
   },
   {
@@ -41,7 +41,7 @@ export const experienceHistory: Experience[] = [
       "Built an HR Management System for resume parsing and dashboard visualization with React.js and Django.",
     ],
     location: "Rajasthan",
-    badge: "07 June 2022 - 06 October 2022",
+    badge: "June 2022 - October 2022",
     image: "/images/logos/employment/agt.png",
   },
 ];
